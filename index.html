@@ -4,14 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home - TODO List</title>
-        <link rel="stylesheet" href="./css/style.css" />
-        <script src="./scripts/app.js" type="module"></script>
+        <title>Home - Pokemon</title>
+        <link rel="stylesheet" href="./dist/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <script src="./dist/scripts/pokemonBuffer.js" type="module"></script>
     </head>
     <body>
-        <slot class="header"></slot>
+        <slot class="counter"></slot>
+        <h2>Pokemon list</h2>
+        <div class="buffer__buttons">
+            <button class="buffer__previous">Previous</button>
+            <button class="buffer__next">Next</button>
+        </div>
         <main>
-            <h2>Home</h2>
+            <slot class="buffer"></slot>
         </main>
         <footer></footer>
     </body>
