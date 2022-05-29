@@ -1,0 +1,25 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    cursor: pointer;
+}
+body {
+    background-color: steelblue;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.buffer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    align-items: center;
+    width: 40vh;
+    height: 70vh;
+    background-color: bisque;
+}
